@@ -120,7 +120,9 @@ flowchart TD
     C -->|OK| E[Akceptacja]
     E --> F[Publikacja w kanałach cyfrowych]
 
-    %% Oddzielny proces dla social media
-    B --> G[Publikacja w mediach społecznościowych (dynamiczny harmonogram)]
+%%Odrębny proces dla mediów społecznościowych
+    B --> G[Publikacja w mediach społecznościowych]
     G --> H[Okresowy przegląd treści opublikowanych w mediach społecznościowych]
     H -->|Braki| I[Informacja zwrotna do autora + ustalenie terminu poprawek]
+I --> H[Okresowy przegląd treści opublikowanych w mediach społecznościowych]
+H -->|OK| E[Akceptacja]
